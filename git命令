@@ -24,6 +24,7 @@ git log -1                                                # 显示1行日志 -n�
 git log -5
 git log --stat                                            # 显示提交日志及相关变动文件
 git log -p -m
+git log -graph
 git show dfb02e6e4f2f7b573337763e5c0013802e392818         # 显示某个提交的详细内容
 git show dfb02                                            # 可只用commitid的前几位
 git show HEAD                                             # 显示HEAD提交日志
