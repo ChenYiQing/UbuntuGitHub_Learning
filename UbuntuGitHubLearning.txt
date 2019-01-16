@@ -1,5 +1,5 @@
-https://git-scm.com/book/zh-tw/v1/
--
+https://git-scm.com/book/zh/v1/
+
 
 Config
 git config --list
@@ -19,6 +19,10 @@ cd Mytest
 vim README
 This is cyq' repo
 
+
+.gitignore不显示
+ls -al
+Ctrl+H
 
 
 GitHub中创建同名仓库
@@ -47,7 +51,7 @@ git reset .
 git reset xxx
 
 撤销修改
-git checkout xxx
+git checkout -- xxx
 
 
 提交 
@@ -78,8 +82,20 @@ git log --pretty=full
 git log --pretty=fuller
 git log --pretty=format:"%h-%an,%ar:%s"
 git log --pretty=format:"%h-%an,%ar:%s" --graph
+git log --since =2.weeks
 
 
+-p
+--world-diff
+--stat
+--shotstat
+--name-only
+--name-status
+--abbrev-commit
+--graph
+--pretty
+--oneline
+--since="2008-10-01"
 
 
 终端查看log如何退出
@@ -94,10 +110,63 @@ git diff --staged
 git status 中文乱码
 git config core.quotepath off           //current repo
 git config --global core.quotepath off  //all repo
+git remote rename xxx yyy
+git remote rm yyy
+
+
+
+Remote
+git remote -v
+git remote ad [shortname][url]
+git fetch origin
+git pull
+git push origin master
+git remote show origin
+
+
+Tag
+git tag
+git tag -l 'v1.4.2' //查看特定大版本
+git tag -a v1.4 -m 'my version 1.4'
+git show v1.4
+git tag v1.4l-lw  //轻量级标签
+（git log --pretty=online）
+git tag -a v0.5 9fceb02 -m 'add tag to exist commit'
+git push origin v0.5
+git push origin v0.5
+git push origin --tags
+
 
 检出
 git checkout xxx
 
-.gitignore不显示
-ls -al
-Ctrl+H
+别名
+git config log prettpy=oneline showgraph
+
+
+
+分支
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
