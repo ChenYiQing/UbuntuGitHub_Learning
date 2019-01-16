@@ -1,3 +1,10 @@
+https://git-scm.com/book/zh-tw/v1/
+-
+
+Config
+git config --list
+
+
 安装
 sudo apt-get install git
 配置
@@ -35,9 +42,20 @@ git add xxx
 git add .
 
 
+撤销暂存
+git reset .
+git reset xxx
+
+撤销修改
+git checkout xxx
+
+
 提交 
 git commit -m "message"
-git commit --amend -m 'commit by merge'
+git commit --amend -m 'commit by merge' 
+
+查看当前项目清单
+git ls-files  
 
 删除
 git rm xxx
@@ -45,22 +63,23 @@ git rm -r *
 
 查看提交日志
 git log
-
-
+git log -n
+git log --status   //查看变动情况
+ 
 
 终端查看log如何退出
 ：q
 
+Diff
 
 
 git status 中文乱码
 git config core.quotepath off           //current repo
 git config --global core.quotepath off  //all repo
 
+检出
+git checkout xxx
 
-
-
-
-
-
-
+.gitignore不显示
+ls -al
+Ctrl+H
