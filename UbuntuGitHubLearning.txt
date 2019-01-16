@@ -35,7 +35,11 @@ git push origin master
 
 克隆
 git clone git+ssh://xxx@xxx/xxx.git
-
+clone报错没有私钥
+ssh-keygen
+Enter X3
+cd ~/.ssh
+cat id_rsa.pub   //拷贝到github
 
 查看状态
 git status
