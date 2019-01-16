@@ -12,12 +12,7 @@ cd Mytest
 vim README
 This is cyq' repo
 
-Git Add
-git add README
-git add .
 
-提交 
-git commit -m "message"
 
 GitHub中创建同名仓库
 git remote add origin https://github.com/user_name/Mytest.git
@@ -31,8 +26,18 @@ git push origin master
 git clone git+ssh://xxx@xxx/xxx.git
 
 
-
+查看状态
 git status
+
+
+添加到stage
+git add xxx
+git add .
+
+
+提交 
+git commit -m "message"
+git commit --amend -m 'commit by merge'
 
 删除
 git rm xxx
