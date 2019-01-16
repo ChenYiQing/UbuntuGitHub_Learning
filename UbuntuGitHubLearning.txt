@@ -3,3 +3,27 @@ sudo apt-get install git
 配置
 git config --global user.name "user_name"
 git config --global user.email "email_id"
+
+初始化仓库
+git init Mytest
+cd Mytest
+
+创建README
+vim README
+This is cyq' repo
+
+Git Add
+git add README
+
+提交 
+git commit -m "message"
+
+GitHub中创建同名仓库
+git remote add origin https://github.com/user_name/Mytest.git
+
+推送主分支
+git push origin master 
+输入账号密码
+
+
+
