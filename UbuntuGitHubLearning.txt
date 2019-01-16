@@ -14,6 +14,7 @@ This is cyq' repo
 
 Git Add
 git add README
+git add .
 
 提交 
 git commit -m "message"
@@ -25,5 +26,36 @@ git remote add origin https://github.com/user_name/Mytest.git
 git push origin master 
 输入账号密码
 
-write sth
+
+克隆
+git clone git+ssh://xxx@xxx/xxx.git
+
+
+
+git status
+
+删除
+git rm xxx
+git rm -r *
+
+查看提交日志
+git log
+
+
+
+终端查看log如何退出
+：q
+
+
+
+git status 中文乱码
+git config core.quotepath off           //current repo
+git config --global core.quotepath off  //all repo
+
+
+
+
+
+
+
 
