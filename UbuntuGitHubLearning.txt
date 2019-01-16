@@ -1,0 +1,103 @@
+https://git-scm.com/book/zh-tw/v1/
+-
+
+Config
+git config --list
+
+
+安装
+sudo apt-get install git
+配置
+git config --global user.name "user_name"
+git config --global user.email "email_id"
+
+初始化仓库
+git init Mytest
+cd Mytest
+
+创建README
+vim README
+This is cyq' repo
+
+
+
+GitHub中创建同名仓库
+git remote add origin https://github.com/user_name/Mytest.git
+
+推送主分支
+git push origin master 
+输入账号密码
+
+
+克隆
+git clone git+ssh://xxx@xxx/xxx.git
+
+
+查看状态
+git status
+
+
+添加到stage
+git add xxx
+git add .
+
+
+撤销暂存
+git reset .
+git reset xxx
+
+撤销修改
+git checkout xxx
+
+
+提交 
+git commit -m "message"
+git commit --amend -m 'commit by merge'   //合并提交
+git commit -a -m 'commit directly'        //直接将工作区和暂存区的修改一起提交
+
+
+查看当前项目清单
+git ls-files  
+
+删除
+git rm xxx
+git rm -r *
+
+
+重命名
+git mv file_from file_to
+
+查看提交日志
+git log
+git log -n
+git log --status   //查看变动情况
+git log --stat
+git log --pretty=oneline
+git log --pretty=short
+git log --pretty=full
+git log --pretty=fuller
+git log --pretty=format:"%h-%an,%ar:%s"
+git log --pretty=format:"%h-%an,%ar:%s" --graph
+
+
+
+
+终端查看log如何退出
+：q
+
+Diff
+git diff
+git diff --cached
+git diff --staged
+
+
+git status 中文乱码
+git config core.quotepath off           //current repo
+git config --global core.quotepath off  //all repo
+
+检出
+git checkout xxx
+
+.gitignore不显示
+ls -al
+Ctrl+H
