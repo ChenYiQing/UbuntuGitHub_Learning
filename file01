@@ -1,1 +1,5 @@
-sdlj`
+#include <stdlib.h>
+int main()
+{
+	print("hello")
+}
